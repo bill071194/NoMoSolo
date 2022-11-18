@@ -7,21 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ResetPassword01 extends AppCompatActivity {
+public class ResetPassword02 extends AppCompatActivity {
 
-    Button button1;
+    Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reset_password01);
+        setContentView(R.layout.activity_reset_password02);
 
-        button1 = findViewById(R.id.rp1Btn);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button2 = findViewById(R.id.rp2Btn);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent;
-                startActivity(new Intent(ResetPassword01.this, ResetPassword02.class));
+                startActivity(new Intent(ResetPassword02.this, MainActivity.class));
             }
         });
     }
